@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mostafa Korani | Frontend Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #fff;
+      color: #199C45;
+      overflow-x: hidden;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px 50px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: #eafbea;
+      color: #199C45;
+    }
+
+    section {
+      padding: 80px 10%;
+      opacity: 1;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      min-height: 90vh;
+    }
+
+    .hero img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 50px;
+      border: 4px solid #199C45;
+      box-shadow: 0 10px 25px rgba(25, 156, 69, 0.15);
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #199C45;
+    }
+
+    .hero-text h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #45b76b;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p, 
+    .about p, 
+    .experience p, 
+    .contact-info p {
+      color: #117733;
+    }
+
+    .about, .experience, .contact {
+      background: #eafbea;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(25, 156, 69, 0.08);
+      margin-bottom: 60px;
+      padding: 40px;
+    }
+
+    h3.section-title {
+      font-size: 2rem;
+      color: #45b76b;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .experience-list li, .education-list li {
+      margin-bottom: 15px;
+      padding: 10px 0;
+      border-bottom: 1px solid #bdeacb;
+      color: #199C45;
+    }
+
+    .contact-info {
+      text-align: center;
+    }
+
+    .contact-buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      background-color: #199C45;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .contact-buttons a:hover {
+      background-color: #117733;
+      color: #eafbea;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #bbb;
+      font-size: 0.9rem;
+      background: #eafbea;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero img {
+        margin: 0 0 20px 0;
+      }
+
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Mostafa Ahmed Mohamed Korani</header>
+
+  <section class="hero">
+    <img src="img/muffe.jpg" alt="Mostafa Korani Profile Picture">
+    <div class="hero-text">
+      <h1>Mostafa Korani</h1>
+      <h2>Frontend Web Developer</h2>
+      <p>I turn coffee into code and ideas into digital experiences. Currently mastering the art of web development in Helsinki Business College.</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <h3 class="section-title">About Me</h3>
+    <p>I’m a results-driven, social and open-minded professional with a strong work ethic and a passion for learning. I enjoy new challenges and have experience in sales, marketing, and customer service. My hobbies include football, bodybuilding, and making music.</p>
+  </section>
+
+  <section class="experience">
+    <h3 class="section-title">Experience & Education</h3>
+    <ul class="experience-list">
+      <li><strong>Sales Consultant</strong> – The Change Group Oy (2018–present)</li>
+      <li><strong>Restaurant Worker</strong> – HMS Host Oy (2015–2018)</li>
+      <li><strong>Waiter</strong> – Habibi Restaurant (2013–2015)</li>
+      <li><strong>Marketing Manager</strong> – Caribbean Limited (2011–2012)</li>
+      <li><strong>Customer Support</strong> – Caribbean Limited (2010–2011)</li>
+      <li><strong>Tour Guide (Spanish/English)</strong> – Golden Europe Tourism (2008–2009)</li>
+    </ul>
+    <ul class="education-list">
+      <li><strong>Ain Shams University</strong> – Bachelor’s degree in Spanish Language (2010)</li>
+      <li><strong>Amiedu</strong> – Finnish Language Course (2014)</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h3 class="section-title">Contact Me</h3>
+    <div class="contact-info">
+      <p>📍 Address: Kulotie 1A, 01450 Vantaa</p>
+      <p>📞 Phone: <a href="tel:+358409354550" style="color:#199C45;">+358 40 935 4550</a></p>
+      <p>📧 Email: <a href="mailto:mostafaa.baggio@gmail.com" style="color:#199C45;">mostafaa.baggio@gmail.com</a></p>
+    </div>
+    <div class="contact-buttons">
+      <a href="tel:+358409354550">Call Me</a>
+      <a href="mailto:mostafaa.baggio@gmail.com">Send Email</a>
+      <a href="CV.Mostafa.Korani_2021.pdf" download>Download My CV</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>All code generated by AI (ChatGPT). Prompt engineer: Mostafa Korani © 2025</p>
+  </footer>
+</body>
+</html>
